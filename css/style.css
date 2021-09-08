@@ -12,7 +12,7 @@ body {
 /* Into Section CSS */
 .fixed-top {
   position: sticky !important;
-  width: 100vw !important;
+  /* width: 100vw !important; */
   top: 0 !important;
   left: 0;
   background-color: transparent !important;
@@ -455,8 +455,11 @@ line-height: 85px;
   }
 }
 @media (max-width: 475px) {
-  header #intro img.chef {
-    margin-top: -900px;
+  /* header #intro img.chef {
+    margin-top: -950px;
+  } */
+  .fixed-top {
+    position: fixed !important;
   }
   .feature-text {
     margin-top: -150px;
@@ -472,6 +475,9 @@ line-height: 85px;
   }
   body {
     overflow-x: hidden !important;
+  }
+  #intro .intro-text span.second {
+   line-height: 1.5 !important;
   }
 }
 @media (max-width: 375px) {
@@ -490,6 +496,6 @@ body {
   overflow-x: hidden !important;
 }
 .intro-text {
-  margin-top: -190px !important;
+  margin-top: -160px !important;
 }
 }
