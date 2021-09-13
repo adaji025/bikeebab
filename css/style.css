@@ -12,12 +12,13 @@ body {
 /* Into Section CSS */
 .fixed-top {
   position: sticky !important;
-  width: 100vw !important;
+  /* width: 100vw !important; */
   top: 0 !important;
   left: 0;
   background-color: transparent !important;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(6px);
+  
 }
 nav ul li a {
   font-size: 14px;
@@ -32,6 +33,19 @@ nav ul li a {
   color: #ef633e !important ;
   color: white;
 }
+.circle {
+  margin-top: -425px !important;
+  margin-left: 129px;
+  width: 1066px;
+  height: 1067px;
+  background: transparent linear-gradient(133deg, #FAD24C7B 0%, #ECF8ED 100%) 0% 0% no-repeat padding-box;
+  border-radius: 100%;
+ 
+}
+header #intro img.chef {
+  margin-top: -500px;
+}
+
 #intro .intro-text span.first {
   font: normal normal 600 18px/32px Montserrat;
   letter-spacing: 0px;
@@ -93,7 +107,6 @@ nav ul li a {
 /* Service Section CSS */
 .service .card {
   width: 383px !important;
-  height: 385px;
   border-radius: 100px 24px 24px 24px !important;
   box-shadow: 0px 24px 48px #00183415 !important;
   border: 0;
@@ -116,8 +129,7 @@ nav ul li a {
 
 /* delicious meal and happy moment style */
 .delicious-meal {
-  height: 55vh;
-  background-image: linear-gradient(to right, #FAD24C7B , #ECF8ED);;
+  background-image: linear-gradient(to right, #FAD24C7B , #ECF8ED);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0px 24px 100px 0px;
@@ -282,6 +294,7 @@ line-height: 85px;
     position: absolute;
   }
   .delicious-meal {
+    height: 580px;
     margin-top: -400px;
   }
   .delicious-meal img {
@@ -315,9 +328,10 @@ line-height: 85px;
     font-size: 42px;
     line-height: 1.2;
   }
-  /* .delicious-meal {
-    height: 40vh !important;
-  } */
+  header #intro img.chef {
+    width: 100% !important;
+    margin-top: -500px;
+  }
 }
 @media (max-width: 992px) {
   header #intro img {
@@ -332,9 +346,6 @@ line-height: 85px;
   #intro .intro-text a {
     margin: 0 0 0 1rem;
   }
-  /* .delicious-meal {
-    height: 35vh;
-  } */
   #intro .intro-text span.second {
     font-size: 42px !important;
     line-height: 1.2;
@@ -356,7 +367,7 @@ line-height: 85px;
     margin-top: -120px;
   }
   .delicious-meal {
-    height: 600px !important;
+    height: 750px !important;
   }
   #contact .inner {
     width: 95vw;
@@ -366,11 +377,13 @@ line-height: 85px;
     height: 40vh;
     margin-top: 30px;
   }
+  #intro {
+    overflow-x: hidden !important;
+  }
 }
 @media (max-width: 576px) {
   .service .card {
     width: 300px !important;
-    height: 300px;
   }
   #menu {
     margin-top: 60px !important;
@@ -424,8 +437,49 @@ line-height: 85px;
   line-height: 40px;
   padding: 20px 0;
   }
-}
+  header #intro img.chef {
+    margin-top: -800px;
+  }
+  .circle {
+    background: none;
 
+  }
+  .feature-text {
+    margin-top: -130px;
+  }
+  #intro {
+    overflow-x: hidden !important;
+  }
+  .delicious-meal {
+    height: 600px !important;
+  }
+}
+@media (max-width: 475px) {
+  /* header #intro img.chef {
+    margin-top: -950px;
+  } */
+  .fixed-top {
+    position: fixed !important;
+  }
+  .feature-text {
+    margin-top: -150px;
+  }
+  #service .title{
+    margin-top: -100px;
+  }
+  #menu .title{
+    margin-top: -70px;
+  }
+  .nmt-100 {
+    margin-top: -40px !important;
+  }
+  body {
+    overflow-x: hidden !important;
+  }
+  #intro .intro-text span.second {
+   line-height: 1.5 !important;
+  }
+}
 @media (max-width: 375px) {
   .container-fluid.service {
     padding-left: 30px;
@@ -433,4 +487,15 @@ line-height: 85px;
   .delicious-meal {
     height: 500px !important;
   }
+  .intro-text {
+    margin-top: -170px !important;
+  }
+}
+@media (max-width: 320px) {
+body {
+  overflow-x: hidden !important;
+}
+.intro-text {
+  margin-top: -160px !important;
+}
 }
